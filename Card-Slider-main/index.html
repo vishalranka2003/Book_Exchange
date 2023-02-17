@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider |Dev Mode</title>
+
+  <!-- Link Swiper's CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/sswiper.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <div class="text">
+    <h2>
+      People with this book
+    </h2>
+  </div>
+
+  <section class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/vinuta.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Student</span>
+          <span class="card__name">Vinuta Bhat</span>
+          <input type="button" class="buttona" onclick="call(1)" value="Connect on whatsapp">
+          <input type="button" class="buttona" onclick="calla(1)" value="Connect on linkedin">
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/shreya.jpg" alt="card image">
+        </div>
+        <div class="card__content">
+          <span class="card__title">Student</span>
+          <span class="card__name">Shreya Rangapure</span>
+          <!-- <button class="card__btn">View More</button> -->
+          <input type="button" class="buttona" onclick="call(2)" value="Connect on whatsapp">
+          <input type="button" class="buttona" onclick="calla(2)" value="Connect on linkedin">
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/vivek.jpg" alt="card image">
+        </div>
+        <div class="card__content">
+          <span class="card__title">Student</span>
+          <span class="card__name">Vivek G Sindagi</span>
+          <!-- <button class="card__btn">View More</button> -->
+          <input type="button" class="buttona" onclick="call(3)" value="Connect on whatsapp">
+          <input type="button" class="buttona" onclick="calla(3)" value="Connect on linkedin">
+
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/srushti.jpg" alt="card image">
+        </div>
+        <div class="card__content">
+          <span class="card__title">Student</span>
+          <span class="card__name">Srushti S Hirematha</span>
+          <!-- <button class="card__btn">View More</button> -->
+          <input type="button" class="buttona" onclick="call(4)" value="Connect on whatsapp">
+          <input type="button" class="buttona" onclick="calla(4)" value="Connect on linkedin">
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+
+  </script>
+  <script src="javascript.js"></script>
+
+</body>
+
+</html>

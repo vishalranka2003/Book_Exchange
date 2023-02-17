@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+<script>
+    $(function () {
+        $('#navigation').load('header.html');
+    });
+
+    var url = "script.js";
+
+    $.getScript(url, function () {
+        $(document).ready(function () {
+            console.log(name+surname); // Prints: Hi there!
+        });
+    });
+</script>
+
+
+
+
+<body>
+    <div id="navigation"></div>
+    <div class="team">
+        <div class="line"></div>
+        <h1>Meet the team</h1>
+        <div class="cards">
+            <div class="card one">
+
+                <div class="circle">
+                    <div class="img img1"></div>
+                </div>
+                <h2 class="name"><a href="https://www.linkedin.com/in/shubham-s-67626b233/" target="_blank"> Shubham
+                        Shrivastava</a></h2>
+                <p class="title">Javascript</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum autem
+                    sed, amet deserunt,
+                    molestiae at
+                    asperiores eius iusto pariatur nam expedita quos accusamus aut minima perspiciatis voluptate tempore
+                    totam assumenda
+                    dolore cumque debitis</p>
+            </div>
+            <div class="card two">
+                <div class="circle">
+                    <div class="img img2"></div>
+                </div>
+                <h2 class="name">
+                    <a href="https://vishalranka2003.github.io/MyWebsite/" target="_blank"> Vishal Ranka</a>
+                </h2>
+                <p class="title">UI/UX Designer</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum autem
+                    sed, amet deserunt,
+                    molestiae at asperiores eius iusto pariatur nam expedita quos accusamus aut minima perspiciatis
+                    voluptate tempore totam assumenda dolore cumque debitis</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
