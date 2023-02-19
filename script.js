@@ -1,28 +1,24 @@
 var user;
 
-var name = "vishal";
-var surname = "ranka";
 function openpopup() {
   console.log("fc");
   document.getElementById("SignIn").style.visibility = "visible";
 }
 function closepopup() {
-  // console.log("fc");
   document.getElementById("SignIn").style.visibility = "hidden";
 }
 
 function opensignup() {
-  // document.getElementById("signupform").reset();
-  console.log("HIIII");
   document.getElementById("SignUp").style.visibility = "visible";
 }
 
 function opensignupfromlogin() {
-  // console.log("youuu");
   document.getElementById("signupform").reset();
   document.getElementById("SignIn").style.visibility = "hidden";
   document.getElementById("SignUp").style.visibility = "visible";
 }
+
+
 function openpopupfromsignup() {
   document.getElementById("loginform").reset();
   document.getElementById("SignUp").style.visibility = "hidden";
@@ -41,16 +37,13 @@ function validatelogin() {
   if (a === "") {
     swal("Wrong Details", "Invalid Username or Password", "error");
     return false;
-    //yaha pe kuch daal dena agar no input to
   } else {
     if (a === pass) {
       closepopup();
-      // document.getElementById("submitonlogin").reset();
       edit_details();
       $(function () {
         $("#loginsuccess").load("loginsuccess.html");
       });
-      // window.location.href = "index.html";
     } else {
       swal("Wrong Details", "Invalid Username or Password", "error");
     }
@@ -83,6 +76,7 @@ function signout() {
   });
 }
 
+
 function showpass() {
   var x = document.getElementById("passwordsignup");
   if (x.type === "password") {
@@ -91,6 +85,7 @@ function showpass() {
     x.type = "password";
   }
 }
+
 function showpasslogin() {
   var x = document.getElementById("password");
   if (x.type === "password") {
@@ -99,3 +94,21 @@ function showpasslogin() {
     x.type = "password";
   }
 }
+
+
+
+const btn = document.querySelectorAll(".book1");
+let e;
+
+btn.forEach(function(x)
+{
+    x.addEventListener("click",function(t)
+    {
+         e = t.currentTarget.id;
+         ba = parseInt(e);
+         localStorage.setItem(ba,ba);
+         window.location.href = "discriptionpage.html";
+         return false;
+    })
+})
+
