@@ -6,7 +6,6 @@
 }
 
 body {
-
   overflow-x: hidden;
 }
 
@@ -17,8 +16,6 @@ body {
   color: var(--secondary-color);
   box-sizing: border-box;
 }
-
-
 
 .root {
   width: 100vw;
@@ -50,9 +47,6 @@ body {
   margin-right: auto;
 }
 
-
-
-
 .navbar {
   /* font-size: 16px;  */
   /* height: 100px; */
@@ -65,7 +59,6 @@ body {
   /* align-items: center;   */
   margin-bottom: 1.5rem;
   /* background: red; */
-
 }
 
 .nav {
@@ -74,30 +67,26 @@ body {
   gap: 1.8rem;
 }
 
-
-
-
 .nav {
   display: flex;
   gap: 20px;
-
 }
 
 .nav2 {
   display: none;
 }
 
-.nav>ul {
+.nav > ul {
   margin: 0px;
   padding: 0px;
   text-align: center;
 }
 
-.nav>ul li {
+.nav > ul li {
   display: inline-block;
 }
 
-.nav>ul li a {
+.nav > ul li a {
   margin-left: 30px;
   text-decoration: none;
   color: var(--primary-color);
@@ -109,7 +98,7 @@ body {
   position: relative;
 }
 
-.nav>ul li a::before {
+.nav > ul li a::before {
   background: var(--theme-color) none repeat scroll 0 0;
   bottom: 15px;
   content: "";
@@ -120,10 +109,9 @@ body {
   transition: 0.5s;
 }
 
-.nav>ul li a:hover::before {
+.nav > ul li a:hover::before {
   width: 100%;
 }
-
 
 .nav2 {
   margin-top: 40px;
@@ -149,7 +137,6 @@ body {
 
 } */
 
-
 .navlink:hover {
   color: rgb(92, 100, 219);
 }
@@ -157,7 +144,6 @@ body {
 .discover {
   color: rgb(92, 100, 219);
 }
-
 
 .logoimg {
   display: flex;
@@ -265,7 +251,9 @@ body {
   /* margin: 20px; */
   display: flex;
   align-items: flex-start;
-  gap: 60px;
+
+  gap: 15rem;
+  margin-bottom: 2rem;
   /* justify-content: sp; */
 }
 
@@ -275,14 +263,17 @@ body {
   gap: 0;
   max-width: 600px;
 }
-
+.aboutauthor h6 {
+  font-size: 1.2rem;
+}
 .aboutauthor p {
-  font-size: 10px;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .authorimg {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-image: url(images/chetanbhagat.cms);
   background-size: cover;
@@ -299,6 +290,7 @@ body {
   max-width: 1100px;
   overflow: hidden;
   height: 300px;
+  margin-bottom: 2rem;
   /* gap: 1.8%; */
 }
 
@@ -347,22 +339,29 @@ body {
   color: #4f4f4f;
 }
 
-.collections h2,
-.popular-text .heading2 {
-
+.collections h2 {
   padding: 0 30px;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 10px 10px;
   font-weight: bolder;
-  font-size: 36px;
+  font-size: 2.5rem;
+  color: black;
+}
+.popular-text .heading2 {
+  padding: 0 30px;
+  margin: 0px 0px 40px 10px;
+  font-weight: bolder;
+  font-size: 2.5rem;
   color: black;
 }
 
 .text {
   padding: 0 30px;
-  font-size: 18px;
+  font-size: 1.3rem;
   color: #363636;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  text-align: center;
+  /* justify-content: space-between; */
+  margin-bottom: 1rem;
 }
 
 .text .rightpara {
@@ -395,27 +394,33 @@ body {
 }
 
 .bg2 {
-  background-image: linear-gradient(0deg,
+  background-image: linear-gradient(
+      0deg,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.05) 85%),
+      rgba(0, 0, 0, 0.05) 85%
+    ),
     url("images/10.jpg");
   /* transition: transform 0.2s; */
 }
 
 .bg3 {
-  background-image: linear-gradient(0deg,
+  background-image: linear-gradient(
+      0deg,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.05) 85%),
+      rgba(0, 0, 0, 0.05) 85%
+    ),
     url("images/11.webp");
 }
 
 .bg4 {
-  background-image: linear-gradient(0deg,
+  background-image: linear-gradient(
+      0deg,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.05) 85%),
+      rgba(0, 0, 0, 0.05) 85%
+    ),
     url("images/12.jpg");
 }
 
@@ -463,14 +468,11 @@ body {
 }
 
 .popular-cards {
-
   display: flex;
   /* padding: 0px auto; */
   /* grid-template-columns: auto auto; */
   justify-content: space-between;
-
 }
-
 
 @media screen and(max-width: 768px) {
   .navbar {
