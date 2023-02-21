@@ -25,7 +25,7 @@
 
   <!-- Bootstrap Font Icon CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-  <link rel="icon" type="image/png" href="/Logo/logotitlebar.png" height="2px" />
+  <link rel="icon" type="image/png" href="Logo/logotitlebar.png" height="2px" />
 
 </head>
 
@@ -35,11 +35,12 @@
   <div class="root">
 
     <div class="container1">
+      <video src="bg/bgvi.mp4" id="video1" preload="" autoplay="" muted="" playsinline="" loop=""></video>
     </div>
     <div class="container1_1">
       <nav class="navbar">
         <div class="app">
-          <img src="/Logo/logo main.png" alt="" width="50 px">
+          <img src="Logo/logo main.png" alt="" width="50 px">
         </div>
         <div class="nav nav1" id="nav1">
           <!-- <div class="navtags"><a class="navlink" href="/contact.html">Contact Us</a></div>
@@ -48,23 +49,23 @@
           <div class="navtags"><a class="navlink" id="Sign_Up" href="#" onclick="opensignup();">SignUp</a></div> -->
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/reviews.html">Review</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="reviews.html">Review</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="#" onclick="openpopup();">Log In</a></li>
-            <li><a href="#" onclick="opensignup();">SIgn Up</a></li>
+            <li><a href="#" onclick="opensignup();">Sign Up</a></li>
           </ul>
         </div>
         <div class="nav nav2" id="nav2">
-          <div class="navtags"><a class="navlink" href="/contact.html">Contact Us</a></div>
-          <div class="navtags"><a class="navlink" href="/reviews.html">Review</a></div>
+          <div class="navtags"><a class="navlink" href="contact.html">Contact Us</a></div>
+          <div class="navtags"><a class="navlink" href="reviews.html">Review</a></div>
           <div class="navtags"><a class="navlink" id="name" href="#" onclick="openpopup();">Username</a></div>
           <div class="navtags"><a class="navlink" id="SignOut" href="#" onclick="signout();">SignOut</a></div>
           <div class="navtags"><i class="bi bi-person-circle" id="profile"></i></div>
         </div>
       </nav>
       <div class="logoimg">
-        <img src="/Logo/books for all white.png" class="logo1" alt="">
+        <img src="Logo/books for all white.png" class="logo1" alt="">
         <!-- <img src="/Logo/books for all white.svg" class="logo1" alt=""> -->
       </div>
       <div class="discover">
@@ -73,7 +74,7 @@
       </div>
       <div class="form">
         <div class="left">
-          
+
           <!-- <div class="locationsign"><i class="bi bi-caret-down-fill"></i></div> -->
           <!-- <label for="categories">Categories</label> -->
 
@@ -126,46 +127,44 @@
         </div>
       </div>
 
-            <div class="container2">
-              <div class="book1" id="1">
-                <img src="/images/1.webp" alt="">
-                <div class="bottom">
-                  <p> One Indian Girl</p>
-                </div>
-              </div>
-              <div class="book1" id="2" >
-                <img src="/images/2.jpg"">
-                <div class=" bottom">
-                <h5> 2 States</h5>
-              </div>
-            </div>
-            <div class="book1" id="3" >
-              <img src="/images/3.webp" alt="">
-              <div class="bottom">
-                <h5> Half Girlfriend</h5>
-              </div>
-            </div>
-            <div class="book1" id="4" >
-              <img src="/images/4.jpg" alt="">
-              <div class="bottom">
-                <h5> The Girl in Room 105</h5>
-              </div>
-            </div>
-            <div class="book1" id="5" >
-              <img src="/images/5.jpg" alt="">
-              <div class="bottom">
-                <h5> India Positive</h5>
-              </div>
-            </div>
-            <div class="book1"  id="6" >
-              <img src="/images/6.jpg" alt="">
-              <div class="bottom">
-                <h5>One Arranged Murder</h5>
-              </div>
-            </div>
+      <div class="container2">
+        <div class="book1" id="1">
+          <img src="images/1.webp" alt="">
+          <div class="bottom">
+            <p> One Indian Girl</p>
           </div>
-
-
+        </div>
+        <div class="book1" id="2">
+          <img src="images/2.jpg">
+                <div class=" bottom">
+          <h5> 2 States</h5>
+        </div>
+      </div>
+      <div class="book1" id="3">
+        <img src="images/3.webp" alt="">
+        <div class="bottom">
+          <h5> Half Girlfriend</h5>
+        </div>
+      </div>
+      <div class="book1" id="4">
+        <img src="images/4.jpg" alt="">
+        <div class="bottom">
+          <h5> The Girl in Room 105</h5>
+        </div>
+      </div>
+      <div class="book1" id="5">
+        <img src="images/5.jpg" alt="">
+        <div class="bottom">
+          <h5> India Positive</h5>
+        </div>
+      </div>
+      <div class="book1" id="6">
+        <img src="images/6.jpg" alt="">
+        <div class="bottom">
+          <h5>One Arranged Murder</h5>
+        </div>
+      </div>
+    </div>
 
 
     <div class="collections">
@@ -238,68 +237,6 @@
     </div>
   </div>
 
-  <!-- <div class="extra" id="SignIn">
-      <div class="extra1">
-        <button onclick="closepopup();" class=closebtn> <i class="bi bi-x"></i> </button>
-        <div class="overlay loginpopup">
-          <h1>Login</h1>
-
-          <form id=loginform>
-            <div class="text_field">
-              <input type="text" placeholder="Username" id="username">
-            </div>
-
-            <div class="text_field">
-              <input type="password" placeholder="Password" id="password">
-            </div>
-            <div class="showpass"><input type="checkbox" onclick="showpasslogin()">Show Password
-              <br>
-            </div>
-            <button class="submit" id="submitonlogin" type="button" onclick="return validatelogin();">
-              Login
-            </button>
-            <div class="signup">
-              Not a member? <a href="#" onclick="opensignupfromlogin()" ;>Signup</a>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="extra" id="SignUp">
-        <div class="extra1">
-          <button onclick="closesignup();" class=closebtn> <i class="bi bi-x"></i> </button>
-          <div class="overlay signuppopup">
-            <h1>
-              Not a user :)
-            </h1>
-
-            <form id="signupform" method="get">
-              <div class="text_field">
-                <input type="tel" maxlength="10" pattern="[0-9]{10}" required placeholder="Enter contact number"
-                  required="" oninvalid="this.setCustomValidity('Please Enter valid Phone Number')"
-                  oninput="setCustomValidity('')">
-              </div>
-
-              <div class="text_field">
-                <input type="text" placeholder="Enter Username" id="usernamesignup">
-              </div>
-
-              <div class="text_field">
-                <input type="password" placeholder="Enter Password" id="passwordsignup">
-              </div>
-              <div class="showpass"><input type="checkbox" onclick="showpass()">Show Password
-                <br>
-              </div>
-              <button class="submit" onclick="callsignup();">
-                Signup
-              </button>
-
-
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
   <div class="extra" id="SignIn">
     <div class="wrapper">
       <div class=" title">
@@ -339,13 +276,17 @@
         SignUp Form
         <button class="closebtn" onclick="closesignup();"> <i class="bi bi-x"></i> </button>
       </div>
-      <form action="#">
+      <form action="connect.php" method="post">
         <div class="field">
-          <input type="email" required id="usernamesignup">
+          <input type="text" required id="usernamesignup" name="userName">
+          <label>Username</label>
+        </div>
+        <div class="field">
+          <input type="email" required id="useremailsignup" name="email">
           <label>Email Address</label>
         </div>
         <div class="field">
-          <input type="password" id="passwordsignup" required>
+          <input type="password" id="passwordsignup" name="password" required>
           <label>Password</label>
         </div>
         <div class="content">
@@ -368,73 +309,89 @@
 
 
   <footer class="footer">
-    <div class="footer__addr">
-      <h1 class="footer__logo"><img src="/Logo/" width="100px" alt=""></h1>
-
-      <h2>Contact</h2>
-
-      <address>
-        Hari Pg infront of Bengaluru Drug House<br>
-        Bengaluru,Karataka-560050 <br>
-
+    <div class="footermain">
+      <div class="footer__addr">
+        <h1 class="footer__logo"><img src="Logo/books for all.svg" width="100px" alt=""></h1>
+        <h2>Contact</h2>
+        <address>
+          Hari Pg infront of Bengaluru Drug House<br>
+          Bengaluru,Karataka-560050 <br>
+        </address>
         <a class="footer__btn" href="mailto:vishalranka3@gmail.com,srivastavashubham2003@gmail.com"
-          target="_blank">Email Us</a>
-      </address>
-    </div>
+          target="_blank">Email
+          Us</a>
+      </div>
 
-    <ul class="footer__nav">
-      <li class="nav__item">
-        <h2 class="nav__title">Help</h2>
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Help</h2>
 
-        <ul class="nav__ul">
-          <li>
-            <a href="#">Online</a>
-          </li>
+          <ul class="nav__ul">
+            <li>
+              <a href="#">About Us</a>
+            </li>
 
-          <li>
-            <a href="#">Print</a>
-          </li>
+            <li>
+              <a href="#">FAQ's</a>
+            </li>
 
-          <li>
-            <a href="#">Alternative Ads</a>
-          </li>
-        </ul>
-      </li>
+            <li>
+              <a href="#">Alternative Ads</a>
+            </li>
+          </ul>
+        </li>
 
-      <li class="nav__item nav__item--extra">
-        <h2 class="nav__title">Refer a Friend</h2>
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Fetaures</h2>
 
-        <ul class="nav__ul nav__ul--extra">
-          <li>
-            <a href="#">Hardware Design</a>
-          </li>
-        </ul>
-      </li>
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Book Exchange</a>
+            </li>
+            <li>
+              <a href="#">Low Cost post</a>
+            </li>
+            <li>
+              <a href="#">Less time </a>
+            </li>
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+          </ul>
+        </li>
 
-      <li class="nav__item">
-        <h2 class="nav__title">Legal</h2>
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
 
-        <ul class="nav__ul">
-          <li>
-            <a href="#">Privacy Policy</a>
-          </li>
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
 
-          <li>
-            <a href="#">Terms of Use</a>
-          </li>
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
 
-          <li>
-            <a href="#">Sitemap</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-    <div class="legal">
-      <p>&copy; 2019 Something. All rights reserved.</p>
-
-      <div class="legal__links">
-        <span>Made with <span class="heart">♥</span> by Shubham & Vishal</span>
+      <div class="legal">
+        <div class="legal__links">
+          &copy; 2019 Something. All rights reserved.
+        </div>
+        <div class="legal__links">
+          Made with <span class="heart">♥</span> by Shubham & Vishal
+        </div>
       </div>
     </div>
   </footer>
@@ -444,6 +401,6 @@
 
 
 <!-- <script src="/review.js"></script> -->
-<script src="/script.js"></script>
+<script src="script.js"></script>
 
 </html>

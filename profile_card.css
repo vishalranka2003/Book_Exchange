@@ -20,12 +20,12 @@
 }
 
 .coverpic1 {
-    background-image: url(/images/12.jpg);
+    background-image: url(images/12.jpg);
     background-position-y: -100px;
 }
 
 .coverpic2 {
-    background-image: url(/images/11.webp);
+    background-image: url(images/11.webp);
     background-position-y: -20x;
 }
 
@@ -39,11 +39,11 @@
 }
 
 .userimg1 {
-    background-image: url(/Review/rashmi.jpg);
+    background-image: url(Review/rashmi.jpg);
 }
 
 .userimg2 {
-    background-image: url(/Review/indra.jpg);
+    background-image: url(Review/indra.jpg);
 }
 
 .name,

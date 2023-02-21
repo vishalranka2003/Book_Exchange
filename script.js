@@ -18,7 +18,6 @@ function opensignupfromlogin() {
   document.getElementById("SignUp").style.visibility = "visible";
 }
 
-
 function openpopupfromsignup() {
   document.getElementById("loginform").reset();
   document.getElementById("SignUp").style.visibility = "hidden";
@@ -76,7 +75,6 @@ function signout() {
   });
 }
 
-
 function showpass() {
   var x = document.getElementById("passwordsignup");
   if (x.type === "password") {
@@ -95,20 +93,15 @@ function showpasslogin() {
   }
 }
 
-
-
 const btn = document.querySelectorAll(".book1");
 let e;
 
-btn.forEach(function(x)
-{
-    x.addEventListener("click",function(t)
-    {
-         e = t.currentTarget.id;
-         ba = parseInt(e);
-         localStorage.setItem(ba,ba);
-         window.location.href = "discriptionpage.html";
-         return false;
-    })
-})
-
+btn.forEach(function (x) {
+  x.addEventListener("click", function (t) {
+    e = t.currentTarget.id;
+    ba = parseInt(e);
+    localStorage.setItem(ba, ba);
+    window.location.href = "descriptionpage.html";
+    return false;
+  });
+});
