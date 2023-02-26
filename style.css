@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --primary-color: #fff;
   --secondary-color: #000;
@@ -6,7 +11,6 @@
 }
 
 body {
-
   overflow-x: hidden;
 }
 
@@ -18,8 +22,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 .root {
   width: 100vw;
   background-color: var(--bg-color);
@@ -28,90 +30,73 @@ body {
   text-align: center;
 }
 
-.container1 {
+/* .container1 {
   background-attachment: fixed;
   background-size: cover;
-  width: 100%;
-  height: 480px;
-  overflow: hidden;
-  background-repeat: no-repeat;
-}
+  height: 100vh; */
 
+/* overflow: hidden;
+  background-repeat: no-repeat; */
+/* }
 #video1 {
-  width: 100%;
-}
+} */
 
 .container1_1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("retrosupply-jLwVAUtLOAQ-unsplash\ \(1\).jpg") center/cover;
 }
-
-
-
 
 .navbar {
-  /* font-size: 16px;  */
-  /* height: 100px; */
   color: white;
-  width: 1100px;
-  margin: 0px auto;
-  /* padding: 17px 0px; */
+
   display: flex;
   justify-content: space-between;
-  /* align-items: center;   */
-  margin-bottom: 1.5rem;
-  /* background: red; */
 
+  margin-bottom: 1.5rem;
+  align-items: center;
 }
 
-.nav {
-  /* margin-top: 40px; */
+/* .nav {
+ 
   display: flex;
   gap: 1.8rem;
+} */
+.app {
+  padding: 1.5em 3.5em;
 }
-
-
-
-
 .nav {
   display: flex;
   gap: 20px;
-
+  padding: 1.5em 10.5em;
 }
 
 .nav2 {
   display: none;
 }
 
-.nav>ul {
+.nav > ul {
   margin: 0px;
   padding: 0px;
   text-align: center;
 }
 
-.nav>ul li {
+.nav ul li {
   display: inline-block;
+  margin: 0 15px;
 }
 
-.nav>ul li a {
-  margin-left: 30px;
+.nav > ul li a {
   text-decoration: none;
   color: var(--primary-color);
-  width: 70px;
-  display: inline-block;
-  text-align: center;
-  padding: 20px 0;
   font-weight: bold;
   position: relative;
+  font-size: 1.2rem;
 }
 
-.nav>ul li a::before {
+.nav > ul li a::before {
   background: var(--theme-color) none repeat scroll 0 0;
-  bottom: 15px;
+  bottom: 1px;
   content: "";
   height: 3px;
   left: 0;
@@ -120,10 +105,9 @@ body {
   transition: 0.5s;
 }
 
-.nav>ul li a:hover::before {
+.nav > ul li a:hover::before {
   width: 100%;
 }
-
 
 .nav2 {
   margin-top: 40px;
@@ -149,7 +133,6 @@ body {
 
 } */
 
-
 .navlink:hover {
   color: rgb(92, 100, 219);
 }
@@ -158,11 +141,11 @@ body {
   color: rgb(92, 100, 219);
 }
 
-
 .logoimg {
   display: flex;
   justify-content: center;
   margin: 0px auto;
+  margin: 0px 1rem;
 }
 
 .logo1 {
@@ -172,19 +155,27 @@ body {
 }
 
 .discover {
-  text-align: center;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* position: absolute;
+  left: 25%; */
+  justify-content: center;
 }
 
 .discover .main {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   font-size: 2rem;
+
   font-weight: bold;
   line-height: 10px;
   color: rgb(92, 100, 219);
+  line-height: 1em;
 }
 
 .discover .supporting {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   color: rgb(92, 100, 219);
   font-size: 25px;
 }
@@ -194,11 +185,12 @@ body {
   align-items: center;
   justify-content: space-between;
   /* margin: 0 auto; */
-  margin: 1.5rem auto;
+  margin: 2rem auto;
   background-color: white;
   color: black;
-  height: 52px;
-  width: 750px;
+  /* position: absolute;
+  top: 100%;
+  left: 50%; */
   border-radius: 10px;
 }
 
@@ -208,6 +200,8 @@ body {
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
+  /* position: relative;
+  display: inline-block; */
 }
 
 .left #categories {
@@ -234,6 +228,8 @@ body {
   width: 0px;
   height: 20px;
   border: 0.05px solid #4f4f4f;
+  /* position: relative;
+  display: inline-block; */
 }
 
 .forminput {
@@ -244,6 +240,10 @@ body {
   height: 52px;
   border: none;
   border-radius: 0px 10px 10px 0px;
+  /* position: relative;
+  display: inline-block;
+  top: 0;
+  right: 10px; */
 }
 
 .forminput:focus {
@@ -254,35 +254,40 @@ body {
 
 .mainbody {
   /* margin-top: 40px; */
-  width: 1100px;
+  width: 100vw;
   /* height: 1200px; */
   /* background-color: red; */
-  padding: 10px;
-  margin: 40px auto;
 }
 
 .authorsort {
   /* margin: 20px; */
   display: flex;
-  align-items: flex-start;
-  gap: 60px;
+  align-items: center;
+  gap: 15rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
   /* justify-content: sp; */
 }
-
+.authorimg {
+  margin-left: 2rem;
+}
 .aboutauthor {
   display: flex;
   flex-direction: column;
   gap: 0;
   max-width: 600px;
 }
-
+.aboutauthor h6 {
+  font-size: 1.2rem;
+}
 .aboutauthor p {
-  font-size: 10px;
+  /* text-align: center; */
+  font-size: 1rem;
 }
 
 .authorimg {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-image: url(images/chetanbhagat.cms);
   background-size: cover;
@@ -290,56 +295,43 @@ body {
 }
 
 .container2 {
-  margin: 0px auto;
+  width: 80%;
+  margin: auto;
+  padding: 1em;
   display: flex;
-  /* flex-wrap: nowrap; */
-  /* background: #000; */
-  /* grid-template-columns: max;*/
-  grid-gap: 10px;
-  max-width: 1100px;
-  overflow: hidden;
-  height: 300px;
-  /* gap: 1.8%; */
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
-
+/* .book-box {
+  object-fit: cover;
+  height: 300px;
+  width: 165px;
+} */
 .book1 img {
   width: 100%;
   height: 250px;
   border-radius: 5px 5px 0px 0px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
-.book1 {
-  /* margin: 40px 0px 0px 0px; */
-  height: 230px;
-  width: 16%;
-  border-radius: 5px;
-  position: relative;
+.container2 .book1 {
+  width: 15.6%;
   transition: transform 0.2s;
   /* Animation */
+  margin-bottom: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
 }
 
 .book1:hover {
   transform: scale(1.04);
 }
-
-.book1 .bottom {
-  text-align: center;
-  position: relative;
-  height: 65px;
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-  top: -34px;
-  border-radius: 0px 0px 15px 15px;
-  padding: 10px 20px 16px;
-  box-shadow: 0px 0px 1px 0.1px rgba(0, 0, 0, 0.2);
+.container2 .book1img {
+  width: 100%;
 }
 
-.book1 .bottom h5 {
-  font-size: 15px;
-  margin: 0px;
-  /* font-weight: bold; */
-  color: #363636;
+.book1 h5 {
+  padding: 1rem;
 }
 
 .book1 .bottom p {
@@ -347,22 +339,31 @@ body {
   color: #4f4f4f;
 }
 
-.collections h2,
-.popular-text .heading2 {
-
-  padding: 0 30px;
-  margin: 0px 0px 10px 0px;
+.collections h2 {
+  text-align: center;
+  padding: 0 2em;
+  margin: auto;
   font-weight: bolder;
-  font-size: 36px;
+  font-size: 2.5rem;
+  color: black;
+}
+.popular-text .heading2 {
+  padding: 0 2em;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2.5rem;
   color: black;
 }
 
 .text {
-  padding: 0 30px;
-  font-size: 18px;
+  padding: 0 2em;
+  font-size: 1.3rem;
   color: #363636;
-  display: flex;
-  justify-content: space-between;
+
+  text-align: center;
+
+  margin-bottom: 1rem;
 }
 
 .text .rightpara {
@@ -387,35 +388,41 @@ body {
 }
 
 .container3 {
-  /* margin: 25px auto; */
+  margin: auto;
   display: flex;
-  /* width: 1100px; */
+
   height: 300px;
   justify-content: space-around;
 }
 
 .bg2 {
-  background-image: linear-gradient(0deg,
+  background-image: linear-gradient(
+      0deg,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.05) 85%),
+      rgba(0, 0, 0, 0.05) 85%
+    ),
     url("images/10.jpg");
   /* transition: transform 0.2s; */
 }
 
 .bg3 {
-  background-image: linear-gradient(0deg,
+  background-image: linear-gradient(
+      0deg,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.05) 85%),
+      rgba(0, 0, 0, 0.05) 85%
+    ),
     url("images/11.webp");
 }
 
 .bg4 {
-  background-image: linear-gradient(0deg,
+  background-image: linear-gradient(
+      0deg,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.05) 85%),
+      rgba(0, 0, 0, 0.05) 85%
+    ),
     url("images/12.jpg");
 }
 
@@ -462,27 +469,130 @@ body {
   display: flex;
 }
 
-.popular-cards {
+/* starting of media queries */
+@media (max-width: 1300px) {
+  .container2 {
+    width: 60%;
+  }
+  .container2 .book1 {
+    width: 32.1%;
+  }
+}
+@media (max-width: 1230px) {
+  .container2 {
+    width: 50%;
+  }
+  .container2 .book1 {
+    width: 120%;
+  }
+}
+@media (max-width: 1100px) {
+  .container2 .book1 {
+    width: 100%;
+  }
 
-  display: flex;
-  /* padding: 0px auto; */
-  /* grid-template-columns: auto auto; */
-  justify-content: space-between;
-
+  .place1 {
+    width: 32%;
+  }
+  /* #profile-card2 {
+    margin-left: -8rem;
+  } */
 }
 
-
-@media screen and(max-width: 768px) {
+@media (max-width: 991px) {
   .navbar {
-    width: 700px;
-    background: red;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    justify-content: center;
+    padding: 1em 3em;
+  }
+  .app {
+    position: relative;
+    left: 10px;
+  }
+
+  .authorsort {
+    gap: 5rem;
+  }
+  .aboutauthorimg {
+    margin-left: 5rem;
   }
 }
 
-.footer {
-  display: flex;
+@media (max-width: 850px) {
+  .authorsort {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+  }
+  .authorimg {
+    margin-left: 0;
+  }
+  .form .left {
+    width: 250px;
+  }
+  .forminput {
+    width: 300px;
+  }
+  .forminput::placeholder {
+    font-size: 1rem;
+  }
+  .authorsort {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .authorimg {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+@media (max-width: 740px) {
+  .container1 {
+    position: relative;
+  }
+  .form .left {
+    width: 200px;
+  }
+  .forminput {
+    width: 200px;
+  }
+  .forminput::placeholder {
+    font-size: 1rem;
+  }
 }
 
-.footermain {
-  max-width: 1100px;
+@media (max-width: 530px) {
+  .container2 .book1 {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .logoimg {
+    height: 80px;
+  }
+  .form .left {
+    width: 150px;
+  }
+  .forminput {
+    width: 150px;
+  }
+  .forminput::placeholder {
+    font-size: 1rem;
+  }
+  .discover.main {
+    height: 80px;
+  }
+  .bottom h3 {
+    position: relative;
+    bottom: 1.5rem;
+  }
+  .bottom p {
+    position: relative;
+    bottom: 1.5rem;
+  }
 }

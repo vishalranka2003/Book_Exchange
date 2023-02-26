@@ -1,5 +1,6 @@
 {
   "files.associations": {
     "LINEAR_1.C": "cpp"
-  }
+  },
+  "liveServer.settings.port": 5501
 }

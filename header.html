@@ -52,33 +52,32 @@
         background-attachment: fixed;
         background-size: cover;
         width: 100vw;
-
-        height: 480px;
-        /* background-size: 100vw; */
-        max-width: 100%;
-        /* added */
         background-repeat: no-repeat;
         object-fit: cover;
     }
 
     .container1_1 {
-        width: 1140px;
-        height: 100px;
-        padding: 0 42px;
+        /* width: 1140px;
+        height: 100px; */
+        /* padding: 0 42px; */
+        width: 100vw;
+
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
-    .nav {
+
+
+    #nav1 {
         display: flex;
-        gap: 20px;
+
 
     }
 
@@ -98,6 +97,7 @@
         text-align: center;
         display: flex;
         align-items: center;
+        gap: 2rem;
     }
 
     .nav>ul li {
@@ -105,7 +105,7 @@
     }
 
     .nav>ul li a {
-        margin-left: 30px;
+
         text-decoration: none;
         color: #fff;
         width: 70px;
@@ -132,6 +132,12 @@
     .nav>ul li a:hover::before {
         width: 100%;
     }
+
+    @media(max-width:600px) {
+        .nav ul {
+            gap: 0.1rem;
+        }
+    }
 </style>
 
 
@@ -141,9 +147,7 @@
         <div class="container1">
         </div>
         <div class="container1_1">
-            <div class="app">
-                <img src="Logo/logo main.png" alt="" width="50px">
-            </div>
+
             <div class="nav nav1" id="nav1">
                 <!-- <div class="navtags"><a class="navlink" href="/contact.html">Contact Us</a></div>
                         <div class="navtags"><a class="navlink" href="/reviews.html">Review</a></div>
