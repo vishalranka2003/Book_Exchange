@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: #fff;
   --secondary-color: #000;
@@ -34,6 +35,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh; */
+width: 100%;
+height: 550px;
+overflow: hidden;
+background-repeat: no-repeat;
+}
 
 /* overflow: hidden;
   background-repeat: no-repeat; */
@@ -49,12 +55,21 @@ body {
 
 .navbar {
   color: white;
-
-  display: flex;
+  <<<<<<< HEAD display: flex;
   justify-content: space-between;
 
   margin-bottom: 1.5rem;
   align-items: center;
+  =======max-width: 1100px;
+  margin: 0px auto;
+  /* padding: 17px 0px; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center;   */
+  margin-bottom: 1.5rem;
+  /* background: red; */
+  position: absolute;
+  >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e
 }
 
 /* .nav {
@@ -63,19 +78,24 @@ body {
   gap: 1.8rem;
 } */
 .app {
-  padding: 1.5em 3.5em;
+  <<<<<<< HEAD padding: 1.5em 3.5em;
+  =======position: relative;
+  left: 20px;
+  >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e
 }
+
 .nav {
   display: flex;
   gap: 20px;
-  padding: 1.5em 10.5em;
+  <<<<<<< HEAD padding: 1.5em 10.5em;
+  =======>>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e
 }
 
 .nav2 {
   display: none;
 }
 
-.nav > ul {
+.nav>ul {
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -86,7 +106,7 @@ body {
   margin: 0 15px;
 }
 
-.nav > ul li a {
+.nav>ul li a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
@@ -94,7 +114,7 @@ body {
   font-size: 1.2rem;
 }
 
-.nav > ul li a::before {
+.nav>ul li a::before {
   background: var(--theme-color) none repeat scroll 0 0;
   bottom: 1px;
   content: "";
@@ -105,7 +125,7 @@ body {
   transition: 0.5s;
 }
 
-.nav > ul li a:hover::before {
+.nav>ul li a:hover::before {
   width: 100%;
 }
 
@@ -156,12 +176,14 @@ body {
 
 .discover {
   margin-top: 1.5rem;
-  display: flex;
+  <<<<<<< HEAD=======text-align: center;
+  >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   /* position: absolute;
   left: 25%; */
-  justify-content: center;
+  <<<<<<< HEAD justify-content: center;
+  =======>>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e
 }
 
 .discover .main {
@@ -262,24 +284,31 @@ body {
 .authorsort {
   /* margin: 20px; */
   display: flex;
-  align-items: center;
+  <<<<<<< HEAD align-items: center;
   gap: 15rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
+  =======gap: 15rem;
+  margin-bottom: 2rem;
+  >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e
   /* justify-content: sp; */
 }
+
 .authorimg {
   margin-left: 2rem;
 }
+
 .aboutauthor {
   display: flex;
   flex-direction: column;
   gap: 0;
   max-width: 600px;
 }
+
 .aboutauthor h6 {
   font-size: 1.2rem;
 }
+
 .aboutauthor p {
   /* text-align: center; */
   font-size: 1rem;
@@ -295,13 +324,29 @@ body {
 }
 
 .container2 {
-  width: 80%;
+  <<<<<<< HEAD width: 80%;
   margin: auto;
   padding: 1em;
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
+  =======margin: 0px auto;
+  padding: 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  /* background: #000; */
+  /* grid-template-columns: max;*/
+  grid-gap: 15px;
+  max-width: 1100px;
+  overflow: hidden;
+  /* height: 300px; */
+  margin-bottom: 2rem;
+  /* gap: 1.8%; */
+  /* align-content: normal; */
+  >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e
 }
+
 /* .book-box {
   object-fit: cover;
   height: 300px;
@@ -315,8 +360,9 @@ body {
 }
 
 .container2 .book1 {
-  width: 15.6%;
-  transition: transform 0.2s;
+  <<<<<<< HEAD width: 15.6%;
+  =======width: 15.32%;
+  >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e transition: transform 0.2s;
   /* Animation */
   margin-bottom: 2rem;
   background-color: rgb(255, 255, 255);
@@ -326,6 +372,7 @@ body {
 .book1:hover {
   transform: scale(1.04);
 }
+
 .container2 .book1img {
   width: 100%;
 }
@@ -340,30 +387,41 @@ body {
 }
 
 .collections h2 {
-  text-align: center;
+  <<<<<<< HEAD text-align: center;
   padding: 0 2em;
   margin: auto;
-  font-weight: bolder;
+  =======padding: 0 30px;
+  margin: 0px 0px 10px 10px;
+  >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e font-weight: bolder;
   font-size: 2.5rem;
   color: black;
 }
+
 .popular-text .heading2 {
-  padding: 0 2em;
+  <<<<<<< HEAD padding: 0 2em;
   margin-bottom: 1.5rem;
   text-align: center;
-  font-weight: bolder;
+  =======padding: 0 30px;
+  margin: 0px 0px 40px 10px;
+  >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e font-weight: bolder;
   font-size: 2.5rem;
   color: black;
 }
 
 .text {
-  padding: 0 2em;
+  <<<<<<< HEAD padding: 0 2em;
   font-size: 1.3rem;
   color: #363636;
 
   text-align: center;
 
-  margin-bottom: 1rem;
+  =======padding: 0 30px;
+  font-size: 1.3rem;
+  color: #363636;
+  /* display: flex; */
+  text-align: center;
+  /* justify-content: space-between; */
+  >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e margin-bottom: 1rem;
 }
 
 .text .rightpara {
@@ -396,33 +454,27 @@ body {
 }
 
 .bg2 {
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.05) 85%
-    ),
+      rgba(0, 0, 0, 0.05) 85%),
     url("images/10.jpg");
   /* transition: transform 0.2s; */
 }
 
 .bg3 {
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.05) 85%
-    ),
+      rgba(0, 0, 0, 0.05) 85%),
     url("images/11.webp");
 }
 
 .bg4 {
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.05) 85%
-    ),
+      rgba(0, 0, 0, 0.05) 85%),
     url("images/12.jpg");
 }
 
@@ -469,23 +521,29 @@ body {
   display: flex;
 }
 
+<<<<<<< HEAD
+
 /* starting of media queries */
 @media (max-width: 1300px) {
   .container2 {
     width: 60%;
   }
+
   .container2 .book1 {
     width: 32.1%;
   }
 }
+
 @media (max-width: 1230px) {
   .container2 {
     width: 50%;
   }
+
   .container2 .book1 {
     width: 120%;
   }
 }
+
 @media (max-width: 1100px) {
   .container2 .book1 {
     width: 100%;
@@ -494,6 +552,7 @@ body {
   .place1 {
     width: 32%;
   }
+
   /* #profile-card2 {
     margin-left: -8rem;
   } */
@@ -504,10 +563,12 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   .nav {
     justify-content: center;
     padding: 1em 3em;
   }
+
   .app {
     position: relative;
     left: 10px;
@@ -516,6 +577,7 @@ body {
   .authorsort {
     gap: 5rem;
   }
+
   .aboutauthorimg {
     margin-left: 5rem;
   }
@@ -528,71 +590,507 @@ body {
     justify-content: center;
     gap: 0rem;
   }
+
   .authorimg {
     margin-left: 0;
   }
-  .form .left {
-    width: 250px;
+
+  =======.popular-cards {
+    display: flex;
+    /* padding: 0px auto; */
+    /* grid-template-columns: auto auto; */
+    gap: 10rem;
   }
-  .forminput {
-    width: 300px;
+
+  /* starting of media queries */
+  @media (max-width: 1100px) {
+    .navbar {
+      max-width: 850px;
+    }
+
+    .container2 {
+      max-width: 1000px;
+    }
+
+    .container2 .book1 {
+      width: 32%;
+    }
+
+    .container3 {
+      max-width: 800px;
+      margin: 0px auto;
+    }
+
+    .place1 {
+      width: 32%;
+    }
+
+    #profile-card2 {
+      margin-left: -8rem;
+    }
+
+    .book-logo {
+      position: relative;
+      left: 1rem;
+    }
+
+    .ctry-lang-container {
+      position: relative;
+      right: 10rem;
+    }
   }
-  .forminput::placeholder {
-    font-size: 1rem;
+
+  @media (max-width: 1050px) {
+    .container2 .book1 {
+      width: 40%;
+    }
+
+    .container3 {
+      max-width: 800px;
+      margin-left: 6rem;
+    }
+
+    .place1 {
+      width: 25%;
+    }
+
+    .bg3 {
+      margin-left: -6rem;
+    }
+
+    .bg4 {
+      margin-left: -6rem;
+    }
+
+    /* .popular-cards {
+    width: 500px;
+    height: ;
+    margin-left: 5rem;
+  } */
   }
-  .authorsort {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+
+  @media (max-width: 991px) {
+    .app {
+      position: relative;
+      left: 10px;
+    }
+
+    #nav1 {
+      display: none;
+    }
+
+    /* .authorsort {
+    display: block;
+  } */
+    /* .aboutauthor {
+    gap: 10rem;
+  } */
+    .authorsort {
+      gap: 5rem;
+    }
+
+    .aboutauthorimg {
+      margin-left: 5rem;
+    }
+
+    .collections {
+      margin-left: -6rem;
+    }
+
+    .leftpara {
+      margin-left: -6rem;
+    }
+
+    .container2 {
+      max-width: 700px;
+      /* height: 650px; */
+      /* margin-left: 10rem; */
+    }
+
+    .book1 {
+      width: 40%;
+    }
+
+    .container3 {
+      max-width: 800px;
+      margin-left: 2rem;
+    }
+
+    .place1 {
+      width: 28%;
+    }
+
+    .popular-text .heading2 {
+      margin-left: -13rem;
+    }
+
+    .popular-cards {
+      display: block;
+    }
+
+    #profile-card1 {
+      width: 800px;
+      margin-bottom: 1rem;
+    }
+
+    #profile-card2 {
+      width: 800px;
+      margin-left: 0.5rem;
+    }
+
+    .ctry-lang-container {
+      position: relative;
+      right: 18rem;
+    }
+
+    .footer-mid {
+      max-width: 800px;
+      gap: 2rem;
+    }
+
+    .last-main-content {
+      width: 12%;
+    }
   }
-  .authorimg {
-    margin-top: 1rem;
-    margin-left: 0;
+
+  /* @media (max-width: 624px) {
+  .discover .main {
+    /* font-size: 1.8rem; */
+  /* height: 80px;
+  } */
+  @media (max-width: 850px) {
+    >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e .form .left {
+      width: 250px;
+    }
+
+    .forminput {
+      width: 300px;
+    }
+
+    .forminput::placeholder {
+      font-size: 1rem;
+    }
+
+    <<<<<<< HEAD .authorsort {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .authorimg {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 740px) {
+    .container1 {
+      position: relative;
+    }
+
+    =======.aboutauthor p {
+      margin-right: 5rem;
+    }
+
+    .aboutauthor h6 {
+      margin-right: 5rem;
+    }
+
+    .container2 {
+      max-width: 600px;
+      margin-right: 20rem;
+    }
+
+    .collections {
+      margin-left: -18rem;
+    }
+
+    .leftpara {
+      margin-left: -18rem;
+    }
+
+    .container3 {
+      max-width: 800px;
+      margin-left: -2rem;
+    }
+
+    .place1 {
+      width: 25%;
+    }
+
+    .bg3 {
+      margin-left: -6rem;
+    }
+
+    .bg4 {
+      margin-left: -6rem;
+    }
+
+    .popular-text .heading2 {
+      margin-left: -19rem;
+    }
+
+    #profile-card1 {
+      width: 680px;
+      margin-left: 1rem;
+    }
+
+    #profile-card2 {
+      width: 680px;
+      margin-left: 1rem;
+    }
+
+    .ctry-lang-container {
+      position: relative;
+      right: 27rem;
+    }
+  }
+
+  @media (max-width: 740px) {
+    >>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e .form .left {
+      width: 200px;
+    }
+
+    .forminput {
+      width: 200px;
+    }
+
+    .forminput::placeholder {
+      font-size: 1rem;
+    }
+
+    <<<<<<< HEAD
+  }
+
+  @media (max-width: 530px) {
+    .container2 .book1 {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .logoimg {
+      height: 80px;
+    }
+
+    .form .left {
+      width: 150px;
+    }
+
+    .forminput {
+      width: 150px;
+    }
+
+    .forminput::placeholder {
+      font-size: 1rem;
+    }
+
+    .discover.main {
+      height: 80px;
+    }
+
+    .bottom h3 {
+      position: relative;
+      bottom: 1.5rem;
+    }
+
+    .bottom p {
+      position: relative;
+      bottom: 1.5rem;
+    }
+  }
+
+  =======.aboutauthor p {
+    margin-right: 15rem;
+  }
+
+  .aboutauthor h6 {
+    margin-right: 15rem;
+  }
+
+  .container2 {
+    max-width: 600px;
+    margin-right: 25rem;
+  }
+
+  .collections {
+    margin-left: -29rem;
+  }
+
+  .leftpara {
+    max-width: 600px;
+    margin-left: -1rem;
+  }
+
+  .container3 {
+    max-width: 800px;
+    margin-left: -7.5rem;
+  }
+
+  .place1 {
+    width: 21%;
+  }
+
+  .bg3 {
+    margin-left: -13rem;
+  }
+
+  .bg4 {
+    margin-left: -13rem;
+  }
+
+  .popular-text .heading2 {
+    margin-left: -31rem;
+  }
+
+  #profile-card1 {
+    width: 550px;
+    margin-left: 1rem;
+  }
+
+  #profile-card2 {
+    width: 550px;
+    margin-left: 1rem;
+  }
+
+  .ctry-lang-container {
+    position: relative;
+    right: 35rem;
   }
 }
-@media (max-width: 740px) {
-  .container1 {
+
+@media (max-width: 600px) {
+  .aboutauthor p {
+    margin-right: 25rem;
+  }
+
+  .aboutauthor h6 {
+    margin-right: 25rem;
+  }
+
+  .container2 {
+    max-width: 600px;
+    margin-right: 30rem;
+  }
+
+  .collections {
+    margin-left: -35rem;
+  }
+
+  .leftpara {
+    max-width: 400px;
+    margin-left: 2rem;
+  }
+
+  .container3 {
+    max-width: 800px;
+    margin-left: -9rem;
+  }
+
+  .place1 {
+    width: 20%;
+  }
+
+  .bg3 {
+    margin-left: -19rem;
+  }
+
+  .bg4 {
+    margin-left: -19rem;
+  }
+
+  .popular-text .heading2 {
+    max-width: 400px;
+    margin-left: 4rem;
+  }
+
+  #profile-card1 {
+    width: 450px;
+    margin-left: 2rem;
+  }
+
+  #profile-card2 {
+    width: 450px;
+    margin-left: 2rem;
+  }
+
+  .ctry-lang-container {
     position: relative;
-  }
-  .form .left {
-    width: 200px;
-  }
-  .forminput {
-    width: 200px;
-  }
-  .forminput::placeholder {
-    font-size: 1rem;
+    right: 40rem;
   }
 }
 
 @media (max-width: 530px) {
+  .container2 {
+    margin-left: -1rem;
+  }
+
   .container2 .book1 {
-    width: 100%;
+    width: 80%;
+  }
+
+  .collections {
+    margin-left: -40rem;
+  }
+
+  .leftpara {
+    max-width: 400px;
+    margin-left: -1rem;
+  }
+
+  .container3 {
+    max-width: 800px;
+    margin-left: -10rem;
+  }
+
+  .place1 {
+    width: 18%;
+  }
+
+  .bg3 {
+    margin-left: -19rem;
+  }
+
+  .bg4 {
+    margin-left: -19rem;
+  }
+
+  #profile-card1 {
+    width: 450px;
+    margin-left: 1rem;
+  }
+
+  #profile-card2 {
+    width: 450px;
+    margin-left: 1rem;
   }
 }
+
 @media (max-width: 420px) {
+  .container1 {
+    height: 600px;
+  }
+
   .logoimg {
     height: 80px;
   }
+
   .form .left {
     width: 150px;
   }
+
   .forminput {
     width: 150px;
   }
+
   .forminput::placeholder {
     font-size: 1rem;
   }
+
   .discover.main {
     height: 80px;
   }
-  .bottom h3 {
-    position: relative;
-    bottom: 1.5rem;
-  }
-  .bottom p {
-    position: relative;
-    bottom: 1.5rem;
-  }
 }
+
+>>>>>>>8e6a19866936724a2cbdcd2b5a794fa94614901e
